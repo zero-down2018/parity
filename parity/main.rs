@@ -70,6 +70,8 @@ extern crate ethcore_stratum;
 #[cfg(feature = "dapps")]
 extern crate ethcore_dapps;
 
+extern crate rpc_cli;
+
 macro_rules! dependency {
 	($dep_ty:ident, $url:expr) => {
 		{
@@ -143,6 +145,12 @@ fn execute(command: Cmd) -> Result<String, String> {
 		Cmd::ImportPresaleWallet(presale_cmd) => presale::execute(presale_cmd),
 		Cmd::Blockchain(blockchain_cmd) => blockchain::execute(blockchain_cmd),
 		Cmd::SignerToken(path) => signer::new_token(path),
+		Cmd::SignerSign { id, pwfile, port, authfile } =>
+			rpc_cli::cmd_signer_sign(id, pwfile, port, authfile),
+		Cmd::SignerList { port, authfile } =>
+			rpc_cli::cmd_signer_list(port, authfile),
+		Cmd::SignerReject { id, port, authfile } =>
+			rpc_cli::cmd_signer_reject(id, port, authfile),
 		Cmd::Snapshot(snapshot_cmd) => snapshot::execute(snapshot_cmd),
 	}
 }
