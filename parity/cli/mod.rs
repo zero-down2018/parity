@@ -490,6 +490,8 @@ mod tests {
 			cmd_export: false,
 			cmd_import: false,
 			cmd_signer: false,
+			cmd_sign: false,
+			cmd_reject: false,
 			cmd_new_token: false,
 			cmd_snapshot: false,
 			cmd_restore: false,
@@ -500,6 +502,7 @@ mod tests {
 			// Arguments
 			arg_pid_file: "".into(),
 			arg_file: None,
+			arg_id: None,
 			arg_path: vec![],
 
 			// -- Operating Options
