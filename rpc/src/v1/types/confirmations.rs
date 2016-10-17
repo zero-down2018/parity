@@ -51,6 +51,7 @@ impl fmt::Display for ConfirmationPayload {
 			ConfirmationPayload::Transaction(ref transaction)
 				=> write!(f, "{}", transaction),
 			ConfirmationPayload::Sign(_) => write!(f, "TODO: data"),
+			ConfirmationPayload::Decrypt(_) => write!(f, "TODO: decrypt"),
 		}
 	}
 }
@@ -65,7 +66,7 @@ pub struct SignRequest {
 }
 
 /// Decrypt request
-#[derive(Debug, Clone, Eq, PartialEq, Hash, Serialize)]
+#[derive(Debug, Clone, Eq, PartialEq, Hash, Serialize, Deserialize)]
 pub struct DecryptRequest {
 	/// Address
 	pub address: H160,
