@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["Personal","Personal rpc interface. Safe (read-only) functions."],["PersonalAccounts","Personal rpc methods altering stored accounts or their settings."],["PersonalSigner","Personal extension for confirmations rpc interface."]]});
