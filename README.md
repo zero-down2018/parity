@@ -1,28 +1,28 @@
-# [Parity](https://ethcore.io/parity.html)
+# [Parity](https://parity.io/parity.html)
 ### Fast, light, and robust Ethereum implementation
 
-[![build status](https://gitlab.ethcore.io/parity/parity/badges/master/build.svg)](https://gitlab.ethcore.io/parity/parity/commits/master) [![Coverage Status][coveralls-image]][coveralls-url]  [![GPLv3][license-image]][license-url]
+[![GPLv3][license-image]][license-url]
 
 ### Join the chat!
 
-Parity [![Join the chat at https://gitter.im/ethcore/parity][gitter-image]][gitter-url] and
-parity.js [![Join the chat at https://gitter.im/ethcore/parity.js](https://badges.gitter.im/ethcore/parity.js.svg)](https://gitter.im/ethcore/parity.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Parity [![Join the chat at https://gitter.im/paritytech/parity][gitter-image]][gitter-url] and
+parity.js [![Join the chat at https://gitter.im/paritytech/parity.js](https://badges.gitter.im/paritytech/parity.js.svg)](https://gitter.im/paritytech/parity.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [Internal Documentation][doc-url]
 
 
 Be sure to check out [our wiki][wiki-url] for more information.
 
-[coveralls-image]: https://coveralls.io/repos/github/ethcore/parity/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/ethcore/parity?branch=master
+[coveralls-image]: https://coveralls.io/repos/github/paritytech/parity/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/paritytech/parity?branch=master
 [gitter-image]: https://badges.gitter.im/Join%20Chat.svg
-[gitter-url]: https://gitter.im/ethcore/parity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+[gitter-url]: https://gitter.im/paritytech/parity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 [license-image]: https://img.shields.io/badge/license-GPL%20v3-green.svg
 [license-url]: https://www.gnu.org/licenses/gpl-3.0.en.html
-[doc-url]: https://ethcore.github.io/parity/ethcore/index.html
-[wiki-url]: https://github.com/ethcore/parity/wiki
+[doc-url]: https://github.com/paritytech/parity/index.html
+[wiki-url]: https://github.com/paritytech/wiki
 
-**Parity requires Rust version 1.15.0 to build**
+**Parity requires at Rust version 1.24.0 to build**
 
 ----
 
@@ -83,7 +83,7 @@ Once you have rustup, install parity or download and build from source
 ## Quick install
 
 ```bash
-cargo install --git https://github.com/ethcore/parity.git parity
+cargo install --git https://github.com/paritytech/parity.git parity
 ```
 
 ----
@@ -92,7 +92,7 @@ cargo install --git https://github.com/ethcore/parity.git parity
 
 ```bash
 # download Parity code
-$ git clone https://github.com/ethcore/parity
+$ git clone https://github.com/paritytech/parity
 $ cd parity
 
 # build in release mode
